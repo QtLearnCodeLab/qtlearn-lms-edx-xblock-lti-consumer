@@ -177,6 +177,9 @@ class LtiConsumer1p1:
             self.lti_user_data.update({
                 'lis_person_sourcedid': person_sourcedid,
             })
+            self.lti_user_data.update({
+                'lis_person_name_full': person_sourcedid,
+            })
 
         if person_contact_email_primary:
             self.lti_user_data.update({
